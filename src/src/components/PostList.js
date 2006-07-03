@@ -4,8 +4,13 @@ import Post from './Post';
 
 const PostList = ({ posts }) => (
   <ul className="posts">
-    {posts.map(({ id, title, url }) => (
-      <Post id={id} title={title} url={url} />
+    {posts.map(({
+      id,
+      title,
+      url,
+      description,
+    }) => (
+      <Post key={id} title={title} url={url} description={description} />
     ))}
   </ul>
 );

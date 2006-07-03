@@ -14,12 +14,16 @@ p {
   padding: 0;
 }
 
-span {
+span, p {
   &.bold {
     font-weight: 700;
   }
 
   &.thin {
     font-weight: 300;
+  }
+  
+  &.small {
+    font-size: 11px;
   }
 }

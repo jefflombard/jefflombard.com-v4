@@ -1,6 +1,11 @@
 import React from 'react';
 
-const Post = ({ id, title, url }) => (
+const Post = ({
+  id,
+  title,
+  url,
+  description,
+}) => (
   <li className="post" key={id}>
     <a
       className="post-link"
@@ -8,7 +13,8 @@ const Post = ({ id, title, url }) => (
       target="_blank"
       rel="noreferrer noopener"
     >
-      {title}
+      <p>{title}</p>
+      <p>{description}</p>
     </a>
   </li>
 );

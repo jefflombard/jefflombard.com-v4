@@ -16,33 +16,13 @@ const Menu = ({ items }) => (
     <Hidden xs>
       <div className="line" />
       <div className="text-section">
-        <p>
-          <span className="bold">
-            jeff lombard
-          </span>
-        </p>
-        <p>
-          <span className="thin">
-            jefflombardjr(at)
-          </span>
-        </p>
-        <p>
-          <span className="thin">
-            gmail(dot)com
-          </span>
-        </p>
+        <p className="bold">jeff lombard</p>
+        <p className="small thin">jefflombardjr(at)</p>
+        <p className="small thin">gmail(dot)com</p>
       </div>
       <div className="text-section">
-        <p>
-          <span className="bold">
-            location
-          </span>
-        </p>
-        <p>
-          <span className="thin">
-            philadelphia, pa
-          </span>
-        </p>
+        <p className="bold">location</p>
+        <p className="small thin">philadelphia, pa</p>
       </div>
     </Hidden>
   </div>

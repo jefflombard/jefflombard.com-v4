@@ -10,3 +10,7 @@
     }
   }
 }
+
+@include media-breakpoint-up(sm) {
+    font-size: 11px;
+}

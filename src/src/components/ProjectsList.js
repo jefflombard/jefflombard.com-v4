@@ -7,8 +7,22 @@ const ProjectsList = ({ projects, filter }) => (
     { projects
       .filter(project => project.tags.includes(filter) || filter === 'false')
       .map((project) => {
-        const { title, id } = project;
-        return (<Project key={id} title={title} />);
+        const {
+          title,
+          id,
+          description,
+          url,
+          gitUrl,
+        } = project;
+        return (
+          <Project
+            key={id}
+            title={title}
+            description={description}
+            url={url}
+            gitUrl={gitUrl}
+          />
+        );
       })
     }
   </ul>

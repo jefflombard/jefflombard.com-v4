@@ -8,5 +8,13 @@
 
 .filter-text {
     font-size: 11px;
-    border-right: 1px solid $black;
+    font-weight: 300;
+    margin: 0 0 10px 7px;
+}
+
+@include media-breakpoint-up(sm) {
+    .filter-text {
+        border-right: 1px solid $black;
+        margin: 0;
+    }
 }
