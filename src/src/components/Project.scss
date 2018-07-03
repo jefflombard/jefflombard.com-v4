@@ -1,4 +1,49 @@
 .project {
     list-style: none;
-    padding: 10px 0;
+    padding: 15px 0;
+    
+    .project-title {
+        padding-bottom: 4px;
+    }
+    
+    .project-description {
+        padding-bottom: 4px;
+    }
+    
+    .project-tags {
+        padding-bottom: 10px;
+        word-wrap: break-word;
+    }
+    
+    .project-tag {
+        margin-right: 3px;
+    }
+    
+    .project-link-holder {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .project-link {
+        border: 1px solid $black;
+        color: $black;
+        padding: 4px;
+        text-decoration: none;
+        
+        &:hover {
+            color: $white;
+            background-color: $black;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .project .project-link-holder {
+        justify-content: flex-start;
+        
+        .project-link {
+            margin: 0 10px 0 0;
+            font-size: 11px;
+        }
+    }
 }

@@ -36,9 +36,11 @@ class Projects extends Component {
             {
               projects{
                 id
-                title,
-                description,
+                title
+                description
                 tags
+                url
+                gitUrl
               }
             }
           `}

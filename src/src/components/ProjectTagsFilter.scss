@@ -7,7 +7,6 @@
 }
 
 .filter-text {
-    font-size: 11px;
     font-weight: 300;
     margin: 0 0 10px 7px;
 }
@@ -16,5 +15,6 @@
     .filter-text {
         border-right: 1px solid $black;
         margin: 0;
+        font-size: 11px;
     }
 }

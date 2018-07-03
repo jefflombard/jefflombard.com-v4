@@ -24,3 +24,9 @@
         }
     }
 }
+
+@include media-breakpoint-up(sm) {
+    .project-tag {
+        font-size: 11px;
+    }
+}

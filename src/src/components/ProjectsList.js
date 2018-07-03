@@ -13,6 +13,7 @@ const ProjectsList = ({ projects, filter }) => (
           description,
           url,
           gitUrl,
+          tags,
         } = project;
         return (
           <Project
@@ -21,6 +22,7 @@ const ProjectsList = ({ projects, filter }) => (
             description={description}
             url={url}
             gitUrl={gitUrl}
+            tags={tags}
           />
         );
       })
