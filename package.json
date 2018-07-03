@@ -4,7 +4,7 @@
   "description": "4th iteration of JeffLombard.com",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node index.js",
+    "start": "node index.js",
     "dev": "NODE_ENV=dev nodemon index.js",
     "build": "rm -rf public && cd src && yarn build && cd .. && mv src/build public",
     "deploy": "git push heroku master",
