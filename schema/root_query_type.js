@@ -5,16 +5,16 @@ const BookType = require('./book_type');
 const PostType = require('./post_type');
 const ProjectType = require('./project_type');
 
-
 const {
   GraphQLObjectType,
   GraphQLList,
   GraphQLNonNull,
   GraphQLID,
 } = graphql;
+
 const Project = mongoose.model('project');
 
-const { postsResolver, booksResolver } = require('./resolvers');
+const { postsResolver, booksResolver, projectsResolver } = require('./resolvers');
 
 const RootQueryType = new GraphQLObjectType({
   name: 'QueryType',
@@ -35,7 +35,7 @@ const RootQueryType = new GraphQLObjectType({
     },
     projects: {
       type: new GraphQLList(ProjectType),
-      resolve: () => Project.find({}),
+      resolve: projectsResolver,
     },
   }),
 });

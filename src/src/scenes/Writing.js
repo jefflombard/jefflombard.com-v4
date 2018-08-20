@@ -24,7 +24,7 @@ const Writing = () => (
     >
       {({ loading, error, data }) => {
         if (loading) return <Loading />;
-        if (error) return <p>Error :(</p>;
+        if (error) return <p>Error: Tell Jeff to fix his database connection.</p>;
         return <PostList posts={data.posts} />;
       }}
     </Query>
