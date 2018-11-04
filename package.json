@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/jefflombard/jefflombard.com-v4#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9"
   },
   "devDependencies": {
     "eslint": "^5.8.0",
