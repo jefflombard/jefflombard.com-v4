@@ -1,0 +1,20 @@
+{
+  "name": "jefflombard.com-v4",
+  "version": "1.0.0",
+  "description": "4th iteration of JeffLombard.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefflombard/jefflombard.com-v4.git"
+  },
+  "author": "Jeff Lombard",
+  "license": "UNLICENSED",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/jefflombard/jefflombard.com-v4/issues"
+  },
+  "homepage": "https://github.com/jefflombard/jefflombard.com-v4#readme"
+}
