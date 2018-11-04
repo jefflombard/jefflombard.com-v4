@@ -4,7 +4,7 @@
   "description": "4th iteration of JeffLombard.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/jefflombard/jefflombard.com-v4/issues"
   },
-  "homepage": "https://github.com/jefflombard/jefflombard.com-v4#readme"
+  "homepage": "https://github.com/jefflombard/jefflombard.com-v4#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
 }
