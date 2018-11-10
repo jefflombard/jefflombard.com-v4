@@ -1,5 +1,5 @@
-const booksResolver = require('./books');
+const postsResolver = require('./posts');
 
 module.exports = {
-  booksResolver,
+  postsResolver,
 };
