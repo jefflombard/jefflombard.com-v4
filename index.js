@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.use('/graphql', graphqlHTTP({
   schema,
-  graphiql: process.env.NODE_ENV === 'dev' || false,
+  graphiql: process.env.NODE_ENV === 'dev' || process.env.GRAPHIQL === "TRUE" || false,
 }));
 
 app.listen(port, () => {
