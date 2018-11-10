@@ -1,17 +1,28 @@
-const mongoose = require('mongoose');
 const graphql = require('graphql');
 
 const {
   GraphQLObjectType,
   GraphQLString,
-  GraphQLID,
+  GraphQLList,
 } = graphql;
 
-const ProjectType = new GraphQLObjectType({
-  name: 'ProjectType',
+const SkillType = new GraphQLObjectType({
+  name: 'Skill',
   fields: () => ({
-    id: { type: GraphQLID },
+    skill: { type: GraphQLString },
+  }),
+});
+
+const ProjectType = new GraphQLObjectType({
+  name: 'Project',
+  fields: () => ({
+    id: { type: GraphQLString },
     title: { type: GraphQLString },
+    description: { type: GraphQLString },
+    imageUrl: { type: GraphQLString },
+    gitUrl: { type: GraphQLString },
+    url: { type: GraphQLString },
+    skills: { type: new GraphQLList(SkillType) },
   }),
 });
 

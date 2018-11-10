@@ -1,25 +1,44 @@
 const graphql = require('graphql');
 
-const ProjectType = ('./project_type');
-
 const {
   GraphQLObjectType,
-  GraphQLID,
-  GraphQLNonNull,
+  GraphQLString,
 } = graphql;
 
+const BookType = require('./book_type');
+const PhotoType = require('./photo_type');
+const PostType = require('./post_type');
+const ProjectType = require('./project_type');
 
-const RootQuery = new GraphQLObjectType({
-  name: 'RootQueryType',
+const RootQueryType = new GraphQLObjectType({
+  name: 'QuerytType',
+  description: 'The root query type.',
   fields: () => ({
+    book: {
+      type: BookType,
+      resolve: () => new Promise((resolve) => {
+        resolve({});
+      }),
+    },
+    photo: {
+      type: PhotoType,
+      resolve: () => new Promise((resolve) => {
+        resolve({});
+      }),
+    },
+    post: {
+      type: PostType,
+      resolve: () => new Promise((resolve) => {
+        resolve({});
+      }),
+    },
     project: {
       type: ProjectType,
-      args: { id: { type: new GraphQLNonNull(GraphQLID) } },
-      resolve(parentValue, { id }) {
-        return { id };
-      },
+      resolve: () => new Promise((resolve) => {
+        resolve({});
+      }),
     },
   }),
 });
 
-module.exports = RootQuery;
+module.exports = RootQueryType;
