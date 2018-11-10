@@ -9,7 +9,7 @@ const postsResolver = (async () => {
       id: item.guid,
       title: item.title,
       url: item.link,
-      date: item.pubDate,
+      date: item.isoDate,
       tags: item.categories,
     }
   ));

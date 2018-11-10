@@ -1,28 +1,19 @@
-const axios = require('axios');
-const convert = require('xml-js');
+const Parser = require('rss-parser');
 
-// const booksResolver = () => new Promise((resolve) => {
-//   const params = {
-//     key: process.env.GOODREADS_KEY,
-//   };
-//   axios.get('https://www.goodreads.com/user/show/', params)
-//     .then( res => {
-//       console.log(JSON.stringify(res.data));
-//     })
-//     .catch( err => {
-//       console.log(err);
-//     });
-//
-//   resolve([{ id: '1' }]);
-// });
-//
-// booksResolver();
+const parser = new Parser();
 
-// module.exports = booksResolver;
+const postsResolver = (async () => {
+  const feed = await parser.parseURL(`https://www.goodreads.com/user/updates_rss/57558558?key=${process.env.GOODREADS_KEY}`);
+  const items = feed.items.map(item => (
+    {
+      id: item.guid,
+      title: item.title,
+      content: item.content,
+      date: item.isoDate,
+    }
+  ));
 
-var dates = Date.parse("Thu, 11 Oct 2018 00:36:01 GMT");
-var stss = new Date(dates);
-var datestring = `${stss.getDay()}.${stss.getMonth()}.${stss.getFullYear()}`
+  return items;
+});
 
-console.log(datestring);
-
+postsResolver().then(feed => console.log(feed));
