@@ -9,10 +9,8 @@ const BookType = new GraphQLObjectType({
   name: 'Book',
   fields: () => ({
     id: { type: GraphQLString },
-    title: { type: GraphQLString },
-    description: { type: GraphQLString },
-    imageUrl: { type: GraphQLString },
-    url: { type: GraphQLString },
+    content: { type: GraphQLString },
+    date: { type: GraphQLString },
   }),
 });
 
