@@ -12,7 +12,7 @@ const BookType = require('./book_type');
 const PhotoType = require('./photo_type');
 const PostType = require('./post_type');
 const ProjectType = require('./project_type');
-const { booksResolver } = require('./resolvers');
+const { postsResolver } = require('./resolvers');
 
 const RootQueryType = new GraphQLObjectType({
   name: 'QuerytType',
@@ -20,7 +20,9 @@ const RootQueryType = new GraphQLObjectType({
   fields: () => ({
     books: {
       type: new GraphQLList(BookType),
-      resolve: booksResolver,
+      resolve: () => new Promise((resolve) => {
+        resolve([{}]);
+      }),
     },
     photos: {
       type: new GraphQLList(PhotoType),
@@ -30,9 +32,7 @@ const RootQueryType = new GraphQLObjectType({
     },
     posts: {
       type: new GraphQLList(PostType),
-      resolve: () => new Promise((resolve) => {
-        resolve([{}]);
-      }),
+      resolve: postsResolver,
     },
     project: {
       type: ProjectType,

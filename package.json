@@ -20,10 +20,13 @@
   },
   "homepage": "https://github.com/jefflombard/jefflombard.com-v4#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
-    "mongoose": "^5.3.9"
+    "mongoose": "^5.3.9",
+    "rss-parser": "^3.5.3",
+    "xml-js": "^1.6.8"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
