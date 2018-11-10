@@ -16,4 +16,4 @@ const postsResolver = (async () => {
   return items;
 });
 
-postsResolver().then(feed => console.log(feed));
+module.exports = postsResolver;

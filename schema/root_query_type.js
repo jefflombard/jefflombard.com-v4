@@ -15,7 +15,7 @@ const ProjectType = require('./project_type');
 const { postsResolver, booksResolver } = require('./resolvers');
 
 const RootQueryType = new GraphQLObjectType({
-  name: 'QuerytType',
+  name: 'QueryType',
   description: 'The root query type.',
   fields: () => ({
     books: {
