@@ -11,7 +11,12 @@ app.get('/', (req, res) => {
 
 app.use('/graphql', graphqlHTTP({
   schema,
-  graphiql: process.env.NODE_ENV === 'dev' || process.env.GRAPHIQL === "TRUE" || false,
+  graphiql: (
+    // Auto turn on graphiql when in dev environments.
+    process.env.NODE_ENV === 'dev'
+    // Allow turning in if GRAPHIQL ENV is set to 'TRUE'
+    || process.env.GRAPHIQL === 'TRUE'
+  ),
 }));
 
 app.listen(port, () => {
