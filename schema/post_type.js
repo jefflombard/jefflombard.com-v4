@@ -6,13 +6,6 @@ const {
   GraphQLList,
 } = graphql;
 
-const TagType = new GraphQLObjectType({
-  name: 'tag',
-  fields: () => ({
-    tag: { type: GraphQLString },
-  }),
-});
-
 const PostType = new GraphQLObjectType({
   name: 'Post',
   fields: () => ({

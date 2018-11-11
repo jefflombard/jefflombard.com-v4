@@ -6,13 +6,6 @@ const {
   GraphQLList,
 } = graphql;
 
-const SkillType = new GraphQLObjectType({
-  name: 'Skill',
-  fields: () => ({
-    skill: { type: GraphQLString },
-  }),
-});
-
 const ProjectType = new GraphQLObjectType({
   name: 'Project',
   fields: () => ({
@@ -22,7 +15,7 @@ const ProjectType = new GraphQLObjectType({
     imageUrl: { type: GraphQLString },
     gitUrl: { type: GraphQLString },
     url: { type: GraphQLString },
-    skills: { type: new GraphQLList(SkillType) },
+    tags: { type: new GraphQLList(GraphQLString) },
   }),
 });
 

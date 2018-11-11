@@ -22,12 +22,6 @@ const RootQueryType = new GraphQLObjectType({
       type: new GraphQLList(BookType),
       resolve: booksResolver,
     },
-    photos: {
-      type: new GraphQLList(PhotoType),
-      resolve: () => new Promise((resolve) => {
-        resolve([{}]);
-      }),
-    },
     posts: {
       type: new GraphQLList(PostType),
       resolve: postsResolver,
