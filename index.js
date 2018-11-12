@@ -25,7 +25,7 @@ app.use('/graphql', graphqlHTTP({
     // Auto turn on graphiql when in dev environments.
     process.env.NODE_ENV === 'dev'
     // Allow turning in if GRAPHIQL ENV is set to 'TRUE'
-    || process.env.GRAPHIQL === 'TRUE' || true
+    || process.env.GRAPHIQL === 'TRUE'
   ),
 }));
 
