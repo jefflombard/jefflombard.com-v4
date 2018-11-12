@@ -1,9 +1,16 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
+const mongoose = require('mongoose')
 const schema = require('./schema/index.js');
 
 const port = process.env.PORT || 3000;
 const app = express();
+
+// Setup Database
+const mongodb = process.env.MONGODB_URI;
+console.log(mongodb);
+// mongoose.connect(mongodb);
+// mongoose.Promise = global.Promise;
 
 app.get('/', (req, res) => {
   res.send(JSON.stringify({ Hello: 'World' }));

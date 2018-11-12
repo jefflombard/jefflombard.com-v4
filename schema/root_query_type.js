@@ -9,7 +9,6 @@ const {
 } = graphql;
 
 const BookType = require('./book_type');
-const PhotoType = require('./photo_type');
 const PostType = require('./post_type');
 const ProjectType = require('./project_type');
 const { postsResolver, booksResolver } = require('./resolvers');

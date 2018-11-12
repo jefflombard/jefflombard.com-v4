@@ -24,7 +24,7 @@
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
-    "mongoose": "^5.3.9",
+    "mongoose": "^5.3.11",
     "rss-parser": "^3.5.3",
     "xml-js": "^1.6.8"
   },
