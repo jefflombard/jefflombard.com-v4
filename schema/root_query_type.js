@@ -9,6 +9,8 @@ const ProjectType = require('./project_type');
 const {
   GraphQLObjectType,
   GraphQLList,
+  GraphQLNonNull,
+  GraphQLID,
 } = graphql;
 const Project = mongoose.model('project');
 
@@ -28,15 +30,12 @@ const RootQueryType = new GraphQLObjectType({
     },
     project: {
       type: ProjectType,
-      resolve: () => new Promise((resolve) => {
-        resolve({});
-      }),
+      args: { id: { type: new GraphQLNonNull(GraphQLID) } },
+      resolve: (parentValue, { id }) => Project.findById(id),
     },
     projects: {
       type: new GraphQLList(ProjectType),
-      resolve() {
-        return Project.find({});
-      },
+      resolve: () => Project.find({}),
     },
   }),
 });
