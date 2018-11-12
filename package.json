@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "NODE_ENV=dev nodemon index.js",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "config": "heroku config:get MONGODB_URI -s >.env"
   },
   "repository": {
     "type": "git",

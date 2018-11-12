@@ -62,3 +62,6 @@ typings/
 
 # Admin Mongo
 adminMongo/
+
+# Environment Vars
+.env

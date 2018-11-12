@@ -8,9 +8,10 @@ const app = express();
 
 // Setup Database
 const mongodb = process.env.MONGODB_URI;
-console.log(mongodb);
-// mongoose.connect(mongodb);
-// mongoose.Promise = global.Promise;
+mongoose.connect(mongodb);
+mongoose.Promise = global.Promise;
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.get('/', (req, res) => {
   res.send(JSON.stringify({ Hello: 'World' }));
