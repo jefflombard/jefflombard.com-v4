@@ -1,5 +1,6 @@
 const models = require('./models');
 const mongoose = require('mongoose');
+const path = require('path');
 const schema = require('./schema/index.js');
 
 // Setup Database
@@ -16,7 +17,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send(JSON.stringify({ Hello: 'World' }));
+  res.sendFile(path.join(__dirname + '/static/index.html'));
 });
 
 app.use('/graphql', graphqlHTTP({
