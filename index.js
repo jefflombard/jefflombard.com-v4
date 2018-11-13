@@ -16,10 +16,15 @@ const graphqlHTTP = require('express-graphql');
 const port = process.env.PORT || 3000;
 const app = express();
 
+// Expose public folder
+app.use(express.static(__dirname + '/public'));
+
+// Serve React App
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/static/index.html'));
+  res.sendFile(path.join(__dirname + '/build/index.html'));
 });
 
+// Serve GraphQL
 app.use('/graphql', graphqlHTTP({
   schema,
   graphiql: (

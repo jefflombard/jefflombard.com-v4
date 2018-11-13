@@ -65,3 +65,6 @@ adminMongo/
 
 # Environment Vars
 .env
+
+# Compiled Assets
+build
