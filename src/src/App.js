@@ -1,13 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
+
+// Component Imports
+import Menu from './components/Menu';
+
+// Scene Imports
+import Books from './scenes/Books';
+import Home from './scenes/Home';
+import Projects from './scenes/Projects';
+import Writing from './scenes/Writing';
 
 class App extends Component {
   render() {
+    const menuItems = [
+      { path: "/", label: "home" },
+      { path: "/projects/", label: "projects" },
+      { path: "/books", label: "books"},
+      { path: "/writing", label: "writing"},
+    ];
+
     return (
-      <div className="App">
-        test
-      </div>
+      <Router>
+        <div>
+          <Menu items={menuItems} />
+          <div class="main">
+            <Route path="/" exact component={Home} />
+            <Route path="/projects/" component={Projects} />
+            <Route path="/books" component={Books} />
+            <Route path="/writing" component={Writing} />
+          </div>
+        </div>
+      </Router>
     );
   }
 }
