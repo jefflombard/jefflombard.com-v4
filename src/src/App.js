@@ -6,10 +6,7 @@ import './App.css';
 import Menu from './components/Menu';
 
 // Scene Imports
-import Books from './scenes/Books';
-import Home from './scenes/Home';
-import Projects from './scenes/Projects';
-import Writing from './scenes/Writing';
+import { Books, Home, Projects, Writing } from './scenes';
 
 class App extends Component {
   render() {
