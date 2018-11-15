@@ -21,9 +21,9 @@ class App extends Component {
 
     return (
       <Router>
-        <div>
+        <div className="main">
           <Menu items={menuItems} />
-          <div class="main">
+          <div>
             <Route path="/" exact component={Home} />
             <Route path="/projects/" component={Projects} />
             <Route path="/books" component={Books} />
