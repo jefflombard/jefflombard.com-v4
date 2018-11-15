@@ -1,11 +1,20 @@
-.nav_menu {
-  font-size: 16px;
+.nav-menu {
+    font-size: 16px;
+    
+    li {
+        list-style-type: none;
+        padding: 10px;
+    }
 
-  li a{
-    font-weight: 900;
-    letter-spacing: .4;
-    text-decoration: none;
-    text-transform: uppercase;
-
-  }
+    li a {
+        color: #000;
+        font-weight: 900;
+        letter-spacing: -2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        &:hover {
+            color: #e6e6e6;
+        }
+    }
 }

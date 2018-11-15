@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './Menu.scss';
 
 const Menu = props => (
-  <div class="nav_menu">
+  <div className="nav-menu">
     {
       props.items.map( item => (
       <li>
