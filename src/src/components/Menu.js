@@ -7,8 +7,8 @@ const Menu = props => (
     <div>
       {
         props.items.map( item => (
-        <li>
-          <Link to={item.path} key={item.path}>{item.label}</Link>
+        <li key={item.path}>
+          <Link to={item.path}>{item.label}</Link>
         </li>
         ))
       }
@@ -26,7 +26,7 @@ const Menu = props => (
         <p>
           <span className="bold">Location</span>
         </p>
-        <p>Phhiladelphia, PA</p>
+        <p>Philadelphia, PA</p>
       </div>
     </Hidden>
   </div>
