@@ -1,5 +1,6 @@
 import React from 'react';
 import { Query } from "react-apollo";
+import { Markup } from 'interweave';
 import gql from "graphql-tag";
 
 const Books = props => (
@@ -8,6 +9,8 @@ const Books = props => (
       {
         books{
           id
+          content
+          date
         }
       }
     `}
@@ -16,9 +19,10 @@ const Books = props => (
       if (loading) return <p>Loading...</p>;
       if (error) return <p>Error :(</p>;
 
-      return data.books.map(({ id }) => (
+      return data.books.map(({ id,content,date }) => (
         <div key={id}>
-          <p>{`id: ${id}`}</p>
+          <Markup content={content} />
+          <p>{`id: ${id}, ${date}`}</p>
         </div>
       ));
     }}
