@@ -13,7 +13,6 @@
 }
 
 @include media-breakpoint-up(sm) {
-  body {
     .home {
       height: 470px;
       justify-content: flex-start;
@@ -24,13 +23,10 @@
       text-align: left;
       align-self: center;
     }
-  }
 }
 
 @include media-breakpoint-up(md) {
-  body {
     .home {
       padding-left: 115px;
     }
-  }
 }
