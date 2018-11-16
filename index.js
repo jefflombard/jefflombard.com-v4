@@ -26,7 +26,6 @@ app.get('/', (req, res) => {
 });
 
 // Serve GraphQL
-app.use()
 app.use('/graphql', cors(), graphqlHTTP({
   schema,
   graphiql: (
