@@ -2,6 +2,7 @@ const models = require('./models');
 const mongoose = require('mongoose');
 const path = require('path');
 const schema = require('./schema/index.js');
+const cors = require('cors');
 
 // Setup Database
 const mongodb = process.env.MONGODB_URI;
@@ -25,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 // Serve GraphQL
-app.use('/graphql', graphqlHTTP({
+app.use('/graphql', cors(), graphqlHTTP({
   schema,
   graphiql: (
     // Auto turn on graphiql when in dev environments.

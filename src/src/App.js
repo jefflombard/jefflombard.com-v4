@@ -12,7 +12,7 @@ import { Books, Home, Projects, Writing } from './scenes';
 
 // Setup GraphQL
 const client = new ApolloClient({
-  uri: '/graphql'
+  uri: 'http://localhost:5000/graphql'
 });
 
 class App extends Component {
