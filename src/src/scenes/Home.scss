@@ -1,18 +1,36 @@
-@import "../styles/grid.scss";
+@import '../styles/grid';
 
 .home {
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-header {
+  height: 40px;
+  max-width: 250px;
   text-align: right;
 }
 
-h1.home-header {
-    font-weight: 400;
-    font-size: 46px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
+@include media-breakpoint-up(sm) {
+  body {
+    .home {
+      height: 470px;
+      justify-content: flex-start;
+    }
+
+    .home-header {
+      max-width: 100%;
+      text-align: left;
+      align-self: center;
+    }
+  }
 }
 
-@include media-breakpoint-up(sm){
-  body{
-    color: blue;
+@include media-breakpoint-up(md) {
+  body {
+    .home {
+      padding-left: 115px;
+    }
   }
 }

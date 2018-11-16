@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-// Styling
-import './App.css';
-
 // Component Imports
 import Menu from './components/Menu';
-import { Row, Col,Visible } from 'react-grid-system';
+import { Row, Col } from 'react-grid-system';
 
 // Scene Imports
 import { Books, Home, Projects, Writing } from './scenes';

@@ -1,0 +1,21 @@
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  &.bold {
+    font-weight: 700;
+  }
+}
