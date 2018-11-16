@@ -45,6 +45,7 @@
     "react-app-polyfill": "^0.1.3",
     "react-dev-utils": "^6.1.1",
     "react-dom": "^16.6.3",
+    "react-grid-system": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
@@ -57,7 +58,8 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx-source": "^7.0.0"
+    "@babel/plugin-transform-react-jsx-source": "^7.0.0",
+    "sass-lint": "^1.12.1"
   },
   "scripts": {
     "start": "node scripts/start.js",

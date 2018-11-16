@@ -1,5 +1,7 @@
+@import "../styles/grid.scss";
+
 .home {
-    text-align: right;
+  text-align: right;
 }
 
 h1.home-header {
@@ -7,4 +9,10 @@ h1.home-header {
     font-size: 46px;
     letter-spacing: 10px;
     text-transform: uppercase;
+}
+
+@include media-breakpoint-up(sm){
+  body{
+    color: blue;
+  }
 }

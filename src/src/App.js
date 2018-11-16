@@ -6,6 +6,7 @@ import './App.css';
 
 // Component Imports
 import Menu from './components/Menu';
+import { Row, Col,Visible } from 'react-grid-system';
 
 // Scene Imports
 import { Books, Home, Projects, Writing } from './scenes';
@@ -22,13 +23,17 @@ class App extends Component {
     return (
       <Router>
         <div className="main">
-          <Menu items={menuItems} />
-          <div>
-            <Route path="/" exact component={Home} />
-            <Route path="/projects/" component={Projects} />
-            <Route path="/books" component={Books} />
-            <Route path="/writing" component={Writing} />
-          </div>
+          <Row>
+            <Col sm={3}>
+              <Menu items={menuItems} />
+            </Col>
+            <Col sm={9}>
+              <Route path="/" exact component={Home} />
+              <Route path="/projects/" component={Projects} />
+              <Route path="/books" component={Books} />
+              <Route path="/writing" component={Writing} />
+            </Col>
+          </Row>
         </div>
       </Router>
     );
