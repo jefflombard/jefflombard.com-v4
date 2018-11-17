@@ -7,9 +7,9 @@
 }
 
 body {
+  font-family: $main-font-regular;
   margin: 10px 20px;
   padding: 0;
-  font-family: $main-font-regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,5 +17,6 @@ body {
 @include media-breakpoint-up(sm) {
   body {
     margin: 10px;
+    overflow: scroll;
   }
 }

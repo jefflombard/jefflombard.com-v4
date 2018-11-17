@@ -2,7 +2,7 @@
   .posts {
     padding-left: 115px;
 
-    div {
+    div:not(.quote) {
       padding: 0 0 14px;
 
       .post-link {
