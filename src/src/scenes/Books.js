@@ -6,8 +6,14 @@ import gql from "graphql-tag";
 import Quote from '../components/Quote';
 
 const Books = props => (
-    <div className="books">
-        <Quote text="I love to read. Feel free to send me some recommendations."/>
+  <div className="books">
+      <Quote text="I love to read. Feel free to send me your recommendations."/>
+      <a
+        className="books-link"
+        href="https://www.goodreads.com/user/show/57558558-jeff"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <div className="books-container">
           <Query
               query={gql`
@@ -27,7 +33,8 @@ const Books = props => (
               }}
           </Query>
         </div>
-    </div>
+      </a>
+  </div>
 );
 
 export default Books;

@@ -1,9 +1,16 @@
+a.books-link {
+  color: $black;
+  text-decoration: none;
+}
+
+.books-container{
+  pointer-events: none;
+}
+
 .book {
   div {
-    text-align: center;
     align-items: center;
-    font-size: 10px;
-    font-weight: 300;
+    text-align: center;
 
     a {
       color: $black;
@@ -28,8 +35,10 @@
 }
 
 @include media-breakpoint-up(sm) {
-  .book div{
+  .book div {
     display: flex;
+    font-size: 10px;
+    font-weight: 300;
     text-align: left;
 
     a img {

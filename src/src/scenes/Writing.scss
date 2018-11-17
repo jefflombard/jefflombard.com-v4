@@ -1,0 +1,18 @@
+@include media-breakpoint-up(md) {
+  .posts {
+    padding-left: 115px;
+
+    div {
+      padding: 0 0 14px;
+
+      .post-link {
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

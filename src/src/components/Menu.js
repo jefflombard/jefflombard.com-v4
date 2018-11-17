@@ -17,16 +17,32 @@ const Menu = props => (
       <div className="line"/>
       <div className="text-section">
         <p>
-          <span className="bold">jeff lombard</span>
+          <span className="bold">
+            jeff lombard
+          </span>
         </p>
-        <p>jefflombardjr(at)</p>
-        <p>gmail(dot)com</p>
+        <p>
+          <span className="thin">
+            jefflombardjr(at)
+          </span>
+        </p>
+        <p>
+          <span className="thin">
+            gmail(dot)com
+          </span>
+        </p>
       </div>
       <div className="text-section">
         <p>
-          <span className="bold">location</span>
+          <span className="bold">
+            location
+          </span>
         </p>
-        <p>philadelphia, pa</p>
+        <p>
+          <span className="thin">
+            philadelphia, pa
+          </span>
+        </p>
       </div>
     </Hidden>
   </div>
