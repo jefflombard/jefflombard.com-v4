@@ -1,5 +1,45 @@
-@include media-breakpoint-up(md) {
-    .books {
-      padding-left: 115px;
+.book {
+  div {
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 300;
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 35px 10px 10px 0;
+      }
     }
+
+    a:not(:first-child),
+    span {
+      padding-left: 2px;
+    }
+
+    table {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .book div{
+    display: flex;
+    text-align: left;
+
+    a img {
+      padding: 10px 10px 10px 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .books {
+    padding-left: 115px;
+  }
 }

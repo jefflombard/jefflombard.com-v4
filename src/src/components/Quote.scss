@@ -1,0 +1,25 @@
+.quote {
+  align-items: center;
+  border-left: 2px solid $black;
+  display: flex;
+  height: 50px;
+  margin: 20px 0;
+
+  .quote-text {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 20px;
+  }
+}
+
+@include media-breakpoint-up(sm){
+  .quote{
+    margin: 90px 0 17px;
+  }
+}
+
+@include media-breakpoint-up(md){
+  .quote{
+    margin: 115px 0 43px;
+  }
+}
