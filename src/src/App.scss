@@ -17,6 +17,11 @@ body {
 @include media-breakpoint-up(sm) {
   body {
     margin: 10px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  body {
     overflow: scroll;
   }
 }
