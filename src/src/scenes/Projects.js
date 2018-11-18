@@ -24,7 +24,7 @@ const Projects = props => (
         const allTagsSorted = allTags.sort();
         const uniqueTags = _.uniq(allTagsSorted);
 
-        console.log(uniqueTags);
+        
 
         return <div></div>;
       }}
