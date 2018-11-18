@@ -1,17 +1,17 @@
 @import './styles/variables';
 
 .main {
-    max-width: $lg;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $lg;
 }
 
 body {
   font-family: $main-font-regular;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   margin: 10px 20px;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @include media-breakpoint-up(sm) {
@@ -23,5 +23,8 @@ body {
 @include media-breakpoint-up(md) {
   body {
     overflow: scroll;
+    .main-container {
+      padding-left: 115px;
+    }
   }
 }

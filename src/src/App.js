@@ -33,10 +33,12 @@ class App extends Component {
                 <Menu items={menuItems} />
               </Col>
               <Col sm={9}>
-                <Route path="/" exact component={Home} />
-                <Route path="/projects/" component={Projects} />
-                <Route path="/books" component={Books} />
-                <Route path="/writing" component={Writing} />
+                <div className="main-container">
+                  <Route path="/" exact component={Home} />
+                  <Route path="/projects/" component={Projects} />
+                  <Route path="/books" component={Books} />
+                  <Route path="/writing" component={Writing} />
+                </div>
               </Col>
             </Row>
           </div>

@@ -24,9 +24,3 @@
       align-self: center;
     }
 }
-
-@include media-breakpoint-up(md) {
-    .home {
-      padding-left: 115px;
-    }
-}

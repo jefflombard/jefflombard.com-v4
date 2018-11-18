@@ -7,7 +7,7 @@ import Quote from '../components/Quote';
 
 const Books = props => (
   <div className="books">
-      <Quote text="I love to read. Send me your recommendations!"/>
+      <Quote text="I love to read."/>
       <a
         className="books-link"
         href="https://www.goodreads.com/user/show/57558558-jeff"

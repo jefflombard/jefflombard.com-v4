@@ -6,7 +6,7 @@ import Quote from '../components/Quote';
 
 const Writing = props => (
   <div className="posts">
-    <Quote text="Thoughts and musings. Mainly about software development."/>
+    <Quote text="Recent thoughts and musings."/>
     <Query
       query={gql`
         {

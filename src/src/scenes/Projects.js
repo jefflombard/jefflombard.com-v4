@@ -2,28 +2,31 @@ import React from 'react';
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import Quote from '../components/Quote';
+import _ from 'lodash';
 
 const Projects = props => (
   <div className="projects">
-    <Quote text="These are some of my more fun projects." />
+    <Quote text="Things I've been working on." />
     <Query
       query={gql`
         {
           projects{
-            id
+            tags
           }
         }
       `}
     >
       {({ loading, error, data }) => {
-        if (loading) return <p>Loading...</p>;
+        if (loading) return <p>Reticulating splines...</p>;
         if (error) return <p>Error :(</p>;
 
-        return data.projects.map(({ id }) => (
-          <div key={id}>
-            <p>{`id: ${id}`}</p>
-          </div>
-        ));
+        const allTags = _.flatten(data.projects.map( project => project.tags));
+        const allTagsSorted = allTags.sort();
+        const uniqueTags = _.uniq(allTagsSorted);
+
+        console.log(uniqueTags);
+
+        return <div></div>;
       }}
     </Query>
   </div>
