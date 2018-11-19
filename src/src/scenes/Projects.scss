@@ -1,0 +1,15 @@
+.tag {
+  color: $black;
+  display: inline;
+  margin: 0 2px;
+  text-decoration: none;
+  word-break: break-all;
+
+  &:hover {
+    color: $gray;
+  }
+}
+
+.filter {
+  
+}

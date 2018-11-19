@@ -3,6 +3,8 @@ import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
 import Quote from '../components/Quote';
+import Loading from '../components/Loading';
+import PostList from '../components/PostList';
 
 const Writing = props => (
   <div className="posts">
@@ -21,21 +23,9 @@ const Writing = props => (
       `}
     >
       {({ loading, error, data }) => {
-        if (loading) return <p>Loading...</p>;
+        if (loading) return <Loading />;
         if (error) return <p>Error :(</p>;
-
-        return data.posts.map(({ id, url, title }) => (
-          <div key={id}>
-            <a
-              className="post-link"
-              href={url}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {title}
-            </a>
-          </div>
-        ));
+        return <PostList posts={data.posts} />;
       }}
     </Query>
   </div>

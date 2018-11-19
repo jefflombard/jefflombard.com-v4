@@ -1,31 +1,4 @@
 .loading-container {
-  height: 400px;
-  width: 100%;
-}
-
-.loading {
-  animation: 1.5s bubble ease-out infinite;
-  background-color: $black;
-  height: 20px;
-  left: 50%;
-  margin-top: 50px;
-  position: absolute;
-  width: 20px;
-
-  &:nth-child(2) {
-    animation: 3s bubble ease-out infinite;
-    animation-delay: 1.5s;
-  }
-}
-
-@keyframes bubble {
-  from {
-    opacity: 1;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: scale(1);
-  }
+  text-align: center;
+  width: auto;
 }

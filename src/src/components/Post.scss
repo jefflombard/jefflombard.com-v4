@@ -1,0 +1,12 @@
+.post {
+  padding: 0 0 14px;
+
+  .post-link {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}
