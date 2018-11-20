@@ -45,7 +45,11 @@ class Projects extends Component {
         >
           {({ loading, error, data }) => {
             if (loading) return <Loading />;
+<<<<<<< HEAD
             if (error) return <p>Error: Tell Jeff to fix his database connection.</p>;
+=======
+            if (error) return <p>Error :(</p>;
+>>>>>>> fefa181abfe24352c28cc018aa12628c5cc02cb2
 
             const allTags = _.flatMapDeep(data.projects, project => _.get(project, 'tags'));
             const allTagsSorted = allTags.sort();
