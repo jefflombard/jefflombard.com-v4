@@ -30,6 +30,7 @@
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "fs-extra": "7.0.0",
     "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
     "interweave": "^9.2.1",
@@ -129,5 +130,9 @@
       "module:@babel/plugin-transform-react-jsx-source",
       "module:@babel/plugin-proposal-export-default-from"
     ]
-  }
+  },
+  "eslintIgnore": [
+    "src/serviceWorker.js",
+    "src/scenes/index.js"
+  ]
 }

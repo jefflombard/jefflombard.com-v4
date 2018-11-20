@@ -1,14 +1,14 @@
 import React from 'react';
-import { Query } from "react-apollo";
-import gql from "graphql-tag";
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 import Quote from '../components/Quote';
 import Loading from '../components/Loading';
 import BookList from '../components/BookList';
 
-const Books = props => (
+const Books = () => (
   <div className="books">
-    <Quote text="I love to read."/>
+    <Quote text="I love to read." />
 
     <Query
       query={gql`
@@ -24,7 +24,7 @@ const Books = props => (
         if (loading) return <Loading />;
         if (error) return <p>Error :</p>;
         console.log('Hey, if you\'re reading this... validateDOMNesting() Error is Caused by the markup coming in from the Good Reads API. Not my code :)');
-        return <BookList books={data.books} />
+        return <BookList books={data.books} />;
       }}
     </Query>
   </div>

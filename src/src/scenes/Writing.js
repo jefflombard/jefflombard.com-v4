@@ -1,14 +1,14 @@
 import React from 'react';
-import { Query } from "react-apollo";
-import gql from "graphql-tag";
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 import Quote from '../components/Quote';
 import Loading from '../components/Loading';
 import PostList from '../components/PostList';
 
-const Writing = props => (
+const Writing = () => (
   <div className="posts">
-    <Quote text="Recent thoughts and musings."/>
+    <Quote text="Recent thoughts and musings." />
     <Query
       query={gql`
         {

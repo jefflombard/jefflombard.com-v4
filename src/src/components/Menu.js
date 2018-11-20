@@ -1,20 +1,20 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { Hidden } from 'react-grid-system';
 
-const Menu = props => (
+const Menu = ({ items }) => (
   <div className="nav-menu">
     <div>
       {
-        props.items.map( item => (
-        <li key={item.path}>
-          <Link to={item.path}>{item.label}</Link>
-        </li>
+        items.map(item => (
+          <li key={item.path}>
+            <Link to={item.path}>{item.label}</Link>
+          </li>
         ))
       }
     </div>
     <Hidden xs>
-      <div className="line"/>
+      <div className="line" />
       <div className="text-section">
         <p>
           <span className="bold">

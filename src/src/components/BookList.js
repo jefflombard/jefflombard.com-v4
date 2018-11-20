@@ -9,7 +9,7 @@ const BooksList = ({ books }) => (
     rel="noopener noreferrer"
     target="_blank"
   >
-    <ul class="books-container">
+    <ul className="books-container">
       {books.map(({ id, content }) => (
         <Book id={id} content={content} />
       ))}

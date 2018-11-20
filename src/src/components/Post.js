@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Post = ({ id, title, url }) => (
   <li className="post" key={id}>
