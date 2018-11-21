@@ -25,7 +25,7 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
   .book div {
     display: flex;
     font-size: 11px;
@@ -41,7 +41,7 @@
 
 
 
-@include media-breakpoint-up(md) {
+@include media-up(md) {
   .book div {
     padding: 0 0 20px;
 

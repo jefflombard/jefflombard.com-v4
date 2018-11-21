@@ -11,7 +11,7 @@
     margin: 0 0 10px 7px;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
     .filter-text {
         border-right: 1px solid $black;
         margin: 0;

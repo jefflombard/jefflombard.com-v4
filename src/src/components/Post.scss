@@ -11,6 +11,6 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
     font-size: 11px;
 }

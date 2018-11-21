@@ -14,13 +14,13 @@ body {
   padding: 0;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
   body {
     margin: 10px;
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-up(md) {
   body {
     overflow: scroll;
     .main-container {

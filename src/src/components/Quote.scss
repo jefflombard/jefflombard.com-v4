@@ -17,13 +17,13 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
   .quote {
     margin: 87px 0 17px;
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-up(md) {
   .quote {
     margin: 118px 0 50px;
   }

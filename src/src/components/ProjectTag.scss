@@ -1,6 +1,6 @@
 .project-tag {
     display: inline;
-    
+
     button {
         display: inline-block;
         border: none;
@@ -13,11 +13,11 @@
         text-align: center;
         -webkit-appearance: none;
         -moz-appearance: none;
-        
+
         &:hover {
             background-color: $gray;
         }
-        
+
         &:focus {
             background-color: $black;
             color: $white;
@@ -25,7 +25,7 @@
     }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
     .project-tag {
         font-size: 11px;
     }

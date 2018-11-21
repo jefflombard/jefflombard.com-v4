@@ -32,7 +32,7 @@
     }
 }
 
-@include media-breakpoint-up(sm){
+@include media-up(sm){
   .nav-menu {
     height: 470px;
     text-align: right;
@@ -42,7 +42,7 @@
   }
 }
 
-@include media-breakpoint-up(md){
+@include media-up(md){
   .nav-menu {
     li {
         list-style-type: none;

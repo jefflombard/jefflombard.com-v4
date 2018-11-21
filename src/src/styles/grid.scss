@@ -1,6 +1,6 @@
 @import 'variables';
 
-@mixin media-breakpoint-up($breakpoint) {
+@mixin media-up($breakpoint) {
   @if $breakpoint == 'xs' {
     @media (min-width: $xs){
       @content

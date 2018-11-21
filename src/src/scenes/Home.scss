@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-up(sm) {
     .home {
       height: 470px;
       justify-content: flex-start;
