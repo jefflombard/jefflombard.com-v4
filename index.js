@@ -20,11 +20,6 @@ const app = express();
 // Expose public folder
 app.use(express.static(__dirname + '/public'));
 
-// Serve React App
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/build/index.html'));
-});
-
 // Serve GraphQL
 app.use('/graphql', cors(), graphqlHTTP({
   schema,
@@ -35,6 +30,12 @@ app.use('/graphql', cors(), graphqlHTTP({
     || process.env.GRAPHIQL === 'TRUE'
   ),
 }));
+
+// Serve React App
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/public/index.html'));
+});
+
 
 app.listen(port, () => {
   if (process.env.NODE_ENV === 'dev') {
