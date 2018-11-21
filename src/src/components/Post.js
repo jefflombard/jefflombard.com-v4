@@ -15,6 +15,7 @@ const Post = ({
     >
       <p>{title}</p>
       <p>{description}</p>
+      <a className="project-link" href={url} target="_blank" rel="noopener noreferrer">View Post</a>
     </a>
   </li>
 );

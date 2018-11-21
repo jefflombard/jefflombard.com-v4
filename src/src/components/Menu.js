@@ -17,6 +17,10 @@ const Menu = ({ items }) => (
       <div className="line" />
       <div className="text-section">
         <p className="bold">jeff lombard</p>
+        <p className="small thin">test</p>
+      </div>
+      <div className="text-section">
+        <p className="bold">contact</p>
         <p className="small thin">jefflombardjr(at)</p>
         <p className="small thin">gmail(dot)com</p>
       </div>
