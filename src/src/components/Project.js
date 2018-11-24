@@ -1,5 +1,7 @@
 import React from 'react';
 
+import BrandedAnchor from './BrandedAnchor';
+
 const Project = ({
   title,
   description,
@@ -15,8 +17,8 @@ const Project = ({
       {tags.map(tag => <span className="project-tag-inline">{tag}</span>)}
     </p>
     <div className="project-link-holder">
-      { url && <a className="project-link" href={url} target="_blank" rel="noopener noreferrer">View Project</a>}
-      { gitUrl && <a className="project-link" href={gitUrl} target="_blank" rel="noopener noreferrer">View Source Code</a>}
+      { url && <BrandedAnchor href={url}>View Project</BrandedAnchor>}
+      { gitUrl && <BrandedAnchor href={gitUrl}>View Source Code</BrandedAnchor>}
     </div>
   </li>
 );

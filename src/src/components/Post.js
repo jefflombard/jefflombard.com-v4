@@ -1,5 +1,7 @@
 import React from 'react';
 
+import BrandedAnchor from './BrandedAnchor';
+
 const Post = ({
   id,
   title,
@@ -7,16 +9,9 @@ const Post = ({
   description,
 }) => (
   <li className="post" key={id}>
-    <a
-      className="post-link"
-      href={url}
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <p>{title}</p>
-      <p>{description}</p>
-      <a className="project-link" href={url} target="_blank" rel="noopener noreferrer">View Post</a>
-    </a>
+    <p>{title}</p>
+    <p>{description}</p>
+    <BrandedAnchor href={url}>View Post</BrandedAnchor>
   </li>
 );
 

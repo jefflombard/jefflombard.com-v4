@@ -1,0 +1,17 @@
+.branded-anchor {
+  border: 1px solid $black;
+  color: $black;
+  padding: 4px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+@include media-up(sm) {
+  .branded-anchor {
+    margin: 0 10px 0 0;
+  }
+}
