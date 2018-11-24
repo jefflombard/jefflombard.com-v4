@@ -31,22 +31,20 @@ const App = () => {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div>
-          <div className="main">
-            <Row>
-              <Col sm={3}>
-                <Menu items={menuItems} />
-              </Col>
-              <Col sm={9}>
-                <div className="main-container">
-                  <Route path="/" exact component={Home} />
-                  <Route path="/projects/" component={Projects} />
-                  <Route path="/books" component={Books} />
-                  <Route path="/writing" component={Writing} />
-                </div>
-              </Col>
-            </Row>
-          </div>
+        <div className="main">
+          <Row>
+            <Col sm={3}>
+              <Menu items={menuItems} />
+            </Col>
+            <Col sm={9}>
+              <div className="main-container">
+                <Route path="/" exact component={Home} />
+                <Route path="/projects/" component={Projects} />
+                <Route path="/books" component={Books} />
+                <Route path="/writing" component={Writing} />
+              </div>
+            </Col>
+          </Row>
         </div>
       </Router>
     </ApolloProvider>

@@ -6,12 +6,10 @@ const Post = ({
   id,
   title,
   url,
-  description,
 }) => (
   <li className="post" key={id}>
-    <p>{title}</p>
-    <p>{description}</p>
-    <BrandedAnchor href={url}>View Post</BrandedAnchor>
+    <p className="post-title">{title}</p>
+    <BrandedAnchor href={url}>Read Post</BrandedAnchor>
   </li>
 );
 

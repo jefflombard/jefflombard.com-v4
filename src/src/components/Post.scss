@@ -1,16 +1,17 @@
 .post {
+  margin: 30px;
   padding: 0 0 14px;
 
+  .post-title {
+    padding: 0 0 10px;
+  }
+
   .post-link {
-    text-decoration: none;
     color: $black;
+    text-decoration: none;
 
     &:hover {
       color: $gray;
     }
   }
-}
-
-@include media-up(sm) {
-    font-size: 11px;
 }

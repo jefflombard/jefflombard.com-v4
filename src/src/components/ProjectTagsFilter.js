@@ -4,7 +4,7 @@ import { Row, Col } from 'react-grid-system';
 import ProjectTag from './ProjectTag';
 
 const ProjectTagsFilter = ({ tags, onClick }) => (
-  <Row>
+  <Row className="project-tags-filter-container">
     <Col sm={2}>
       <p className="filter-text">filter by skill</p>
     </Col>

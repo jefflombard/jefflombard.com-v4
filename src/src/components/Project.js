@@ -17,8 +17,8 @@ const Project = ({
       {tags.map(tag => <span className="project-tag-inline">{tag}</span>)}
     </p>
     <div className="project-link-holder">
-      { url && <BrandedAnchor href={url}>View Project</BrandedAnchor>}
-      { gitUrl && <BrandedAnchor href={gitUrl}>View Source Code</BrandedAnchor>}
+      { url && <BrandedAnchor href={url}>View</BrandedAnchor>}
+      { gitUrl && <BrandedAnchor href={gitUrl}>View Source</BrandedAnchor>}
     </div>
   </li>
 );
