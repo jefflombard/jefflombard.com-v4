@@ -8,7 +8,7 @@ import PostList from '../components/PostList';
 
 const Writing = () => (
   <div className="posts">
-    <Quote text="Recent thoughts and musings." />
+    <Quote text="Things I've been writing about." />
     <Query
       query={gql`
         {

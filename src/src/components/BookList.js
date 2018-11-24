@@ -10,8 +10,8 @@ const BooksList = ({ books }) => (
     target="_blank"
   >
     <ul className="books-container">
-      {books.map(({ id, content }) => (
-        <Book id={id} content={content} />
+      {books.map(({ id, content, date }) => (
+        <Book id={id} content={content} date={date} />
       ))}
     </ul>
   </a>

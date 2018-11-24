@@ -8,7 +8,7 @@ import BookList from '../components/BookList';
 
 const Books = () => (
   <div className="books">
-    <Quote text="I love to read." />
+    <Quote text="Things I've been reading." />
 
     <Query
       query={gql`
@@ -16,6 +16,7 @@ const Books = () => (
           books{
             id
             content
+            date
           }
         }
       `}

@@ -1,4 +1,9 @@
 .book {
+  font-weight: 300;
+  height: 90px;
+  padding: 0 0 0 60px;
+  position: relative;
+
   div {
     align-items: center;
     text-align: center;
@@ -8,9 +13,11 @@
       text-decoration: none;
 
       img {
-        display: block;
+        left: 0;
         margin: 0 auto;
-        padding: 30px 10px 10px 0;
+        padding: 0 10px 0 0;
+        position: absolute;
+        top: 0;
       }
     }
 
@@ -27,9 +34,7 @@
 
 @include media-up(sm) {
   .book div {
-    display: flex;
-    font-size: 11px;
-    font-weight: 300;
+    font-size: 14px;
     text-align: left;
 
     a img {
@@ -43,8 +48,6 @@
 
 @include media-up(md) {
   .book div {
-    padding: 0 0 20px;
-
     a img {
       padding: 0 10px 0 0;
     }

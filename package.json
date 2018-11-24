@@ -8,7 +8,7 @@
     "dev": "yarn build && yarn local",
     "dev:watch": "NODE_ENV=dev nodemon -e scss,js,json --watch src/src --exec heroku local",
     "build": "rm -rf public && cd src && yarn build && cd .. && mv src/build public",
-    "local": "heroku local",
+    "local": "NODE_ENV=dev heroku local",
     "deploy": "git push heroku master",
     "config": "heroku config:get MONGODB_URI -s >.env"
   },
