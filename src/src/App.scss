@@ -6,12 +6,28 @@
   max-width: $lg;
 }
 
+.main-video-container {
+  height: 100vh;
+  left: 0;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.main-video {
+  left: -1%;
+  position: relative;
+  top: -1%;
+  width: 101%;
+}
+
 body {
   font-family: $main-font-regular;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin: 10px 20px;
-  padding: 0;
+  padding: 10px;
 }
 
 @include media-up(sm) {
