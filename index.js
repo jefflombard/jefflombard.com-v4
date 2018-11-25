@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const schema = require('./schema/index.js');
 const cors = require('cors');
+const compression = require('compression');
 
 // Setup Database
 const mongodb = process.env.MONGODB_URI;
@@ -18,6 +19,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 // Expose public folder
+app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
 // Serve GraphQL
