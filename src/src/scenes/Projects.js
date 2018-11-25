@@ -30,7 +30,7 @@ class Projects extends Component {
     const { filter } = this.state;
     return (
       <div className="projects">
-        <Quote text="Things I've been working on." />
+        <Quote text="Things I've been doing." />
         <Query
           query={gql`
             {

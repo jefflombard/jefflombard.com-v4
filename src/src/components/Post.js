@@ -9,7 +9,7 @@ const Post = ({
 }) => (
   <li className="post" key={id}>
     <p className="post-title">{title}</p>
-    <BrandedAnchor href={url}>Read Post</BrandedAnchor>
+    <BrandedAnchor href={url}>Read</BrandedAnchor>
   </li>
 );
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Hidden } from 'react-grid-system';
 
+import SocialButtons from './SocialButtons';
+
 const Menu = ({ items }) => (
   <div className="nav-menu">
     <div>
@@ -17,17 +19,18 @@ const Menu = ({ items }) => (
       <div className="line" />
       <div className="text-section">
         <p className="bold">jeff lombard</p>
-        <p className="small thin">test</p>
+        <SocialButtons />
+      </div>
+      <div className="text-section">
+        <p className="bold">location</p>
+        <p className="small thin">philadelphia, pa</p>
       </div>
       <div className="text-section">
         <p className="bold">contact</p>
         <p className="small thin">jefflombardjr(at)</p>
         <p className="small thin">gmail(dot)com</p>
       </div>
-      <div className="text-section">
-        <p className="bold">location</p>
-        <p className="small thin">philadelphia, pa</p>
-      </div>
+
     </Hidden>
   </div>
 );

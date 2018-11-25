@@ -7,3 +7,9 @@
   padding: 0;
   pointer-events: none;
 }
+
+@include media-up(sm) {
+  .books-container {
+    margin: 20px 0;
+  }
+}
