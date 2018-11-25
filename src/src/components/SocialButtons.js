@@ -30,12 +30,12 @@ const LinkedInIcon = () => (
 const SocialButtons = () => (
   <ul className="social-buttons">
     <li>
-      <a className="social-button" href="https://github.com/jefflombard" target="_blank" rel="noopener noreferrer">
+      <a className="social-button" href="https://medium.com/@JeffLombardJr" target="_blank" rel="noopener noreferrer">
         <MediumIcon />
       </a>
     </li>
     <li>
-      <a className="social-button" href="https://github.com/jefflombard" target="_blank" rel="noopener noreferrer">
+      <a className="social-button" href="https://www.linkedin.com/in/jefflombardjr/" target="_blank" rel="noopener noreferrer">
         <LinkedInIcon />
       </a>
     </li>
