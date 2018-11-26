@@ -68,3 +68,5 @@ adminMongo/
 
 # Compiled Assets
 build
+
+utils/certs
