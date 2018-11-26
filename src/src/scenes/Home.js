@@ -10,7 +10,7 @@ const Home = (props) => {
       <div>
         <h1 className="home-header">Jeff Lombard</h1>
         <Hidden xs>
-          <BrandedButton onClick={videoHandler}>Say hello! Give me a click.</BrandedButton>
+          <BrandedButton onClick={videoHandler}>Welcome! Click to for a hello!</BrandedButton>
         </Hidden>
       </div>
     </div>

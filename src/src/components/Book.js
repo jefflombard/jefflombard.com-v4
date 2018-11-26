@@ -12,7 +12,7 @@ const daysAgo = (dateString) => {
 const Book = ({ id, content, date }) => (
   <div key={id} className="book">
     <Markup content={content} />
-    <p>{`${daysAgo(date)} days ago.`}</p>
+    <p>{`${daysAgo(date)} ${daysAgo(date) === 1 ? 'day' : 'days'} ago.`}</p>
   </div>
 );
 
