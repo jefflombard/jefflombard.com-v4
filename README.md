@@ -14,7 +14,7 @@ I wanted to highlight some of my favorite parts of this codebase, so that people
 
 **BackEnd**: I decided to use `GraphQL`, because I thought it was an easy way to aggregate data from multiple sources into one convenient endpoint. See [When and why to use GraphQL](https://medium.com/@JeffLombardJr/when-and-why-to-use-graphql-24f6bce4839d).
 
-Most of the `GraphQL` stuff is in [/schema](schema/)
+Most of the `GraphQL` stuff is in [/schema](schema)
 
 **FrontEnd**: I like [apollo](https://www.apollographql.com/) because of it's ease of setup.
 
@@ -25,7 +25,7 @@ I had a [valid use case](https://reactjs.org/docs/refs-and-the-dom.html) for `re
 
 #### React Router
 
-I'm using React Router, and created the [scenes/](scenes/) directory to house components that would show in the main window.
+I'm using React Router, and created the [scenes/](scenes) directory to house components that would show in the main window.
 
 #### Some Really Dumb Components
 ([Yes that's a good thing](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).)
