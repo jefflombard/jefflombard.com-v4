@@ -34,7 +34,7 @@ I think [BrandedButton](src/src/components/BrandedButton.js) and [BrandedAnchor]
 
 ### sketch
 
-I did the FrontEnd designs before I touched any code. See [/sketch](sketch/)
+I did the FrontEnd designs before I touched any code. See [/sketch](sketch)
 
 ### lodash
 
