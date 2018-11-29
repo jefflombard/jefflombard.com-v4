@@ -5,8 +5,14 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
+@font-face {
+  font-family: 'Lato';
+  font-display: swap;
+  src: local('Lato'), url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+}
+
 // Font Families
-$main-font-regular: "Helvetica Neue", "Lato", sans-serif;
+$main-font-regular: 'Helvetica Neue', 'Lato', sans-serif;
 
 // Colors
 $black: #000;
