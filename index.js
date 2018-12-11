@@ -2,6 +2,7 @@ const models = require('./models');
 const mongoose = require('mongoose');
 const path = require('path');
 const schema = require('./schema/index.js');
+const cors = require('cors');
 const compression = require('compression');
 
 // Setup Database
@@ -22,7 +23,7 @@ app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
 // Serve GraphQL
-app.use('/graphql', graphqlHTTP({
+app.use('/graphql', cors(), graphqlHTTP({
   schema,
   graphiql: (
     // Auto turn on graphiql when in dev environments.
