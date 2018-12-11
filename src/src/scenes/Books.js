@@ -24,7 +24,8 @@ const Books = () => (
       {({ loading, error, data }) => {
         if (loading) return <Loading />;
         if (error) return <p>Error: Tell Jeff to fix his database connection.</p>;
-        console.log('Hey, if you\'re reading this... validateDOMNesting() Error is Caused by the markup coming in from the Good Reads API. Not my code :)'); // eslint-disable-next-line
+        // eslint-disable-next-line
+        console.log('Hey, if you\'re reading this... validateDOMNesting() Error is Caused by the markup coming in from the Good Reads API. Not my code :)');
         return <BookList books={data.books} />;
       }}
     </Query>
