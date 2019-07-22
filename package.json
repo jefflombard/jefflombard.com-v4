@@ -7,9 +7,9 @@
     "start": "node index.js",
     "dev": "yarn build && yarn local",
     "dev:watch": "NODE_ENV=dev nodemon -e scss,js,json --watch src/src --exec heroku local",
-    "build": "rm -rf public && node src/scripts/build.js && mv src/build public",
+    "build": "echo OK",
     "local": "NODE_ENV=dev heroku local",
-    "deploy": "git push heroku master",
+    "deploy": "cd src && yarn run build && cd .. && rm -rf public && mv src/build public && git push heroku master",
     "config": "heroku config:get MONGODB_URI -s >.env"
   },
   "repository": {

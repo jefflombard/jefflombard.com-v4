@@ -67,7 +67,7 @@ class App extends Component {
                       ref={(video) => { this.video = video; }}
                       className="main-video"
                     >
-                      <source src="https://flamboyant-wiles-026587.netlify.com/whitelow.mp4" type="video/mp4" />
+                      <source src="" type="video/mp4" />
                       <track kind="captions" />
                     </video>
                   </div>
