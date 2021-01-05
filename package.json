@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/jefflombard/jefflombard.com-v4#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "chalk": "^2.4.1",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
